@@ -7,14 +7,12 @@ if (mysqli_connect_errno()) {
     exit();
 }
 
-$id = 0;
+$displayitems = 30;
+$page = intval($_GET['page']);
 
-if(empty($_GET['id'])){
-$resSet = $mysqli->query("select * from items order by date desc, time desc ");
-}else{
-$id=intval($_GET['id']);
-$resSet = $mysqli->query("select * from items where id =" . $id . " order by date desc, time desc");
-}
+$startindex = $page * $displayitems;
+
+$resSet = $mysqli->query("select * from items order by date desc, time desc LIMIT 30 OFFSET ". $startindex );
 
 $datePrev = "";
 
@@ -32,9 +30,10 @@ if($resSet->num_rows != 0){
 			
 			$day = intval(substr($date,6,2));
 			$month = intval(substr($date,4,2));
+			$monthName = date("F", mktime(0, 0, 0, $month, 10));
 			$year = intval(substr($date,0,4));
 						
-			echo "<div class='date'> $day - $month - $year</div>";
+			echo "<div class='date'>$monthName, $day</div>";
 		}
 						
 		echo "<div class='data'><p class='testo'><a class='titolo' href='$link'>$title</a> $text</p></div>";

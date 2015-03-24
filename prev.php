@@ -1,10 +1,10 @@
 <?php  
 
-$IdPrev = ($id-1);
+$IdPrev = ($page-1);
 
 IF($IdPrev > 0){ 
 
-	echo "<a href='index.php?id=$IdPrev'> previous </a>";
+	echo "<a href='index.php?page=$IdPrev'> previous </a>";
 	
 }else{
 	
