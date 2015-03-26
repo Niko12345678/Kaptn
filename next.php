@@ -1,6 +1,6 @@
 <?php
 
 $idNext = ($page+1);
-echo "<a href='index.php?page=$idNext'> next </a>";
+echo "<a class='next' href='index.php?page=$idNext'> next </a>";
 
 ?>

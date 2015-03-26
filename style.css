@@ -1,23 +1,32 @@
+body{
+background-color: black;
+font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+
 .data{ 
-font-family: Arial, Helvetica, sans-serif;
 width: 60%;
+height:60;
 color:black;
 background-color: white;
 margin-left:20%;
 margin-top:-2px !important;
 margin-bottom:-2px !important;
 border: 2px solid black;
+vertical-align: middle;
  }
  
  .date{ 
-font-family: Arial, Helvetica, sans-serif;
 width: 60%;
-color:black;
-background-color: grey;
+height: 20;
+color:white;
+background-color: black;
 margin-left:20%;
 margin-top:-2px !important;
 margin-bottom:-2px !important;
 border: 2px solid black;
+vertical-align: middle;
  }
  
  .titolo{
@@ -27,15 +36,63 @@ margin-top:3px;
  }
  
  .testo{
+ padding-top: 18px;
  margin:0px;
 margin-Bottom:3px;
  }
  
-h1{
+.header{
  text-align:center;
- font-family:"arial";
+ font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+ font-size:120;
+ color: white;
  width: 60%;
-  margin:0px;
+ height: 150px;
+ margin:0px;
  margin-left:20%;
  border: 2px solid black;
+ }
+ 
+ .buttons{
+width: 60%;
+height: 20;
+color:white;
+margin-left:20%;
+background-color: black;
+margin-top:-2px !important;
+margin-bottom:-2px !important;
+border: 2px solid black;
+vertical-align: middle;
+}
+ 
+ a:link{
+ color: black; 
+ }
+ 
+  a:visited{
+ color: gray; 
+ }
+ 
+  a:hover{
+ color: black; 
+ text-decoration: underline;
+ }
+ 
+  a.buttons:link{
+  color: white !important;
+  text-decoration: none;
+  }
+  
+a.buttons:visited{
+  color: white !important;
+  text-decoration: none;
+  }
+ 
+ .next{
+ margin-left:87%;
+ 
+ }
+ 
+  .prev{
+	text-align:left;
  }
