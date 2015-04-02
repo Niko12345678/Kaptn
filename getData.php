@@ -24,7 +24,10 @@ if($resSet->num_rows != 0){
 		$title = $rows['title'];
 		$link = $rows['link'];
 		$text = $rows['text'];
+		$via = $rows['via'];
 		$date = $rows['date'];
+		
+		$html = "";
 		
 		if ($date <> $datePrev) {
 			
@@ -36,8 +39,17 @@ if($resSet->num_rows != 0){
 			echo "<div class='date'>$monthName, $day</div>";
 		}
 						
-		echo "<div class='data'><p class='testo'><a class='titolo' href='$link'>$title</a> $text</p></div>";
-			
+						
+		$html = "<div class='data'><p class='testo'><a class='titolo' href='$link'>$title</a> $text ";
+		
+		if ($via <> ""){
+		$html .=  "<a class='via' href='$via'>>></a>";
+		}
+		
+		
+		$html .=  "</p></div>";
+		echo ($html);
+		
 		$datePrev = $date;
 		
 		

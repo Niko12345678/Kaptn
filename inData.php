@@ -17,7 +17,7 @@ try {
 	$title = htmlspecialchars($_POST["title"]);
 	$text = htmlspecialchars($_POST["text"]);
 	$link = htmlspecialchars($_POST["link"]);
-	$via = htmlspecialchars($_POST["link"]);
+	$via = htmlspecialchars($_POST["via"]);
 	$date = htmlspecialchars($_POST["date"]);
 	$time = htmlspecialchars($_POST["time"]);
 

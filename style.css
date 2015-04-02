@@ -7,7 +7,7 @@ font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
 
 .data{ 
 width: 60%;
-height:60;
+min-height:60;
 color:black;
 background-color: white;
 margin-left:20%;
@@ -15,6 +15,7 @@ margin-top:-2px !important;
 margin-bottom:-2px !important;
 border: 2px solid black;
 vertical-align: middle;
+height: auto;
  }
  
  .date{ 
@@ -82,17 +83,18 @@ vertical-align: middle;
   color: white !important;
   text-decoration: none;
   }
-  
-a.buttons:visited{
+
+  a.buttons:visited{
   color: white !important;
   text-decoration: none;
   }
+
  
  .next{
- margin-left:87%;
- 
- }
- 
-  .prev{
-	text-align:left;
+	float: right;
+  margin-right: 20%;
+  }
+ .prev{
+	float: left;
+  margin-left: 20%;
  }

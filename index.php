@@ -32,6 +32,6 @@
 <div id="header" class="header">kaptn</div>
 <?php include 'getData.php'; ?>
 </div>
-<div class="buttons"><?php include 'prev.php'; include 'next.php';?></div>
+<div id="buttons"><?php include 'prev.php'; include 'next.php';?></div>
 </body>
 </html>
