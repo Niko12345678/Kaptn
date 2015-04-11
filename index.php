@@ -7,15 +7,17 @@
 <script type="text/javascript">
       $(document).ready(function (){
         var link = "http://api.tumblr.com/v2/blog/glitchgifs.tumblr.com/posts?";
+		//var link = "http://api.tumblr.com/v2/blog/mapsdesign.tumblr.com/posts?";
         $.ajax({
           type: "GET",
           url : link,
           dataType: "jsonp", 
           data: {
-              api_key: "fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4"
+			  api_key: "fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4"
           }
         }).done(function( data ) {
-          $.each(data.response.posts, function(){
+			$.each(data.response.posts, function(){
+
             var _photos = this.photos;
             $.each(_photos, function(){
               $('#header').css("background-image", "url(" + this.original_size.url + ")");
@@ -28,10 +30,11 @@
 </script>
 </head>
 <body>
-<div id="container">
-<div id="header" class="header">kaptn</div>
+<div class="container">
+<div id="header" class="header"><a href="index.php" class="kaptn">kaptn</a></div>
 <?php include 'getData.php'; ?>
-</div>
 <div id="buttons"><?php include 'prev.php'; include 'next.php';?></div>
+</div>
+
 </body>
 </html>

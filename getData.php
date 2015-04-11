@@ -12,8 +12,6 @@ $displayitems = 20;
 $page = intval($_GET['page']);
 $id = intval($_GET['id']);
 
-echo "page" . $page;
-echo "id" . $id;
 
 if (intval($id) > 0) {
 

@@ -3,43 +3,42 @@ background-color: black;
 font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
 }
 
-
-
-.data{ 
-width: 60%;
-min-height:60;
-color:black;
-background-color: white;
-margin-left:20%;
+div{
 margin-top:-2px !important;
 margin-bottom:-2px !important;
 border: 2px solid black;
+}
+
+.container{
+width:60%;
+margin-left:20%;
+}
+
+
+.data{ 
+min-height:60;
+color:black;
+background-color: white;
 vertical-align: middle;
 height: auto;
  }
  
  .date{ 
-width: 60%;
 height: 20;
 color:white;
 background-color: black;
-margin-left:20%;
-margin-top:-2px !important;
-margin-bottom:-2px !important;
-border: 2px solid black;
 vertical-align: middle;
  }
  
  .titolo{
 margin:0px;
 margin-top:3px;
-/*font-weight: bold;*/
  }
  
  .testo{
  padding-top: 18px;
  margin:0px;
-margin-Bottom:3px;
+ margin-bottom:3px;
  }
  
 .header{
@@ -47,22 +46,13 @@ margin-Bottom:3px;
  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
  font-size:120;
  color: white;
- width: 60%;
  height: 150px;
- margin:0px;
- margin-left:20%;
- border: 2px solid black;
  }
  
- .buttons{
-width: 60%;
+.buttons{
 height: 20;
 color:white;
-margin-left:20%;
 background-color: black;
-margin-top:-2px !important;
-margin-bottom:-2px !important;
-border: 2px solid black;
 vertical-align: middle;
 }
  
@@ -90,11 +80,26 @@ vertical-align: middle;
   }
 
  
+ a.kaptn:link{
+ color: white;
+ text-decoration: none;
+ }
+ 
+  a.kaptn:hover{
+ color: white;
+ text-decoration: none;
+ }
+ 
+   a.kaptn:visited{
+ color: white;
+ text-decoration: none;
+ }
+ 
  .next{
 	float: right;
-  margin-right: 20%;
+  margin-right: 0;
   }
  .prev{
 	float: left;
-  margin-left: 20%;
+  margin-left: 0;
  }
